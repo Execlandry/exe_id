@@ -67,6 +67,16 @@ class ExeCard extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10.0),
+            Text(
+              'Danggg',
+              style: TextStyle(
+                fontFamily: 'Architect',
+                color: Colors.amber,
+                letterSpacing: 2.0,
+              ),
+            ),
+            SizedBox(height: 10.0),
+
             Row(
               children: [
                 Icon(
@@ -80,16 +90,6 @@ class ExeCard extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                Text(
-                  'Danggg',
-                  style: TextStyle(
-                    fontFamily: 'Architect',
-                    color: Colors.amber,
-                    letterSpacing: 2.0,
-                  ),
-                ),
-                SizedBox(height: 10.0),
-
               ],
             ),
           ],
