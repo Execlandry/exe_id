@@ -80,6 +80,15 @@ class ExeCard extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
+                Text(
+                  'Danggg',
+                  style: TextStyle(
+                    fontFamily: 'Architect',
+                    color: Colors.amber,
+                    letterSpacing: 2.0,
+                  ),
+                ),
+                SizedBox(height: 10.0),
 
               ],
             ),
