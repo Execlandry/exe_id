@@ -6,7 +6,14 @@ void main() => runApp(MaterialApp(
 
 ));
 
-class ExeCard extends StatelessWidget {
+class ExeCard extends StatefulWidget {
+  @override
+  _ExeCardState createState() => _ExeCardState();
+}
+
+int points =0;
+
+class _ExeCardState extends State<ExeCard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,6 +24,18 @@ class ExeCard extends StatelessWidget {
         backgroundColor: Colors.teal,
         elevation: 0.0,
       ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          setState(() {
+            points+=1;
+          });
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.grey[800],
+      ),
+
+
       body: Padding(
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
 
@@ -68,7 +87,7 @@ class ExeCard extends StatelessWidget {
             ),
             SizedBox(height: 10.0),
             Text(
-              'Danggg',
+              '$points',
               style: TextStyle(
                 fontFamily: 'Architect',
                 color: Colors.amber,
@@ -96,6 +115,17 @@ class ExeCard extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+class Test extends StatefulWidget {
+  @override
+  _TestState createState() => _TestState();
+}
+
+class _TestState extends State<Test> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
 
